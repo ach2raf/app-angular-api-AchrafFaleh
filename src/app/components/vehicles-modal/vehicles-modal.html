@@ -1,0 +1,14 @@
+<div class="modal-header bg-dark">
+    <h4 class="modal-title text-primary">Hi there!</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div class="bg-dark">
+<div class="modal-body text-light">
+    <p>Vehicle: {{ vehicleDetail?.name }}</p>
+    <p>Modelo: {{ vehicleDetail?.model}}</p>
+    <p>Longitud: {{ vehicleDetail?.length}}</p>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-danger" (click)="activeModal.close()">Close</button>
+</div>
+</div>
